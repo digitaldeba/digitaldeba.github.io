@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project_291123</title>
-    <link rel="stylesheet" href="style.css">
+    <title>VRbros | DigitalDeba</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 </head>
-
 <body>
-    <!-- project_291123 -->
-    <div class="form-box">
-        <h1>Simple Contact Form</h1>
-        <p>Using <a href="https://getbootstrap.com">Bootstrap</a> and <a href="https://www.formbucket.com">FormBucket</a></p>
-        <form action="https://api.formbucket.com/f/c2K3QTQ" method="post">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input class="form-control" id="name" type="text" name="Name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input class="form-control" id="email" type="email" name="Email">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" name="Message"></textarea>
-          </div>
-          <input class="btn btn-primary" type="submit" value="Submit" />
-          </div>
-        </form>
-      </div>
+    <div id="top">
+        <div class="perspective">
+            <div class="card">
+                <div class="thumb" style="background-image: url(https://images.unsplash.com/photo-1478358161113-b0e11994a36b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a11da19e81415e5a81029aade9df7774&auto=format&fit=crop&w=668&q=80)"></div>
+                <h2>Virtual Reality</h2>
+                <span>Dreaming with your eyes open!</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="dribbble">
+        <a href="https://dribbble.com/albanbujupaj" target="_blank">
+            <span class="icon"><img width="30" src="https://image.flaticon.com/icons/svg/179/179316.svg" alt=""></span><span class="caption">follow me on dribbble</span>
+        </a>
+    </div>
+    
+    <!-- Include jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        var o = jQuery(".card");
+        jQuery("#top").on("mousemove", function (t) {
+            var e = -(jQuery(window).innerWidth() / 2 - t.pageX) / 30,
+                n = (jQuery(window).innerHeight() / 2 - t.pageY) / 10;
+            o.attr("style", "transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-webkit-transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-moz-transform: rotateY(" + e + "deg) rotateX(" + n + "deg)");
+        });
+    </script>
 </body>
 </html>
