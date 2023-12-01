@@ -51,25 +51,23 @@ body {
     }
 
     h2 {
-    position: absolute;
-    top: 0;
-    left: -60px;
-    font-size: 40px;
-    font-weight: 100;
-    transform: translateZ(80px)!important;
+        position: absolute;
+        top: 0;
+        left: -60px;
+        font-size: 40px;
+        font-weight: 100;
+        transform: translateZ(80px);
     }
-    
+
     span {
         position: absolute;
         bottom: 40px;
         right: -280px;
         font-size: 37px;
         font-weight: 600;
-        transform: translateZ(35px)!important;
+        transform: translateZ(35px);
     }
 }
-
-
 
 .dribbble {
     position: fixed;
@@ -89,5 +87,3 @@ img {
     display: block;
     border-radius: 15px;
 }
-
-
