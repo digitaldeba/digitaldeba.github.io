@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VRbros | DigitalDeba</title>
+    <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
@@ -12,6 +12,9 @@
         <div class="perspective">
             <div class="card">
                 <div class="thumb" style="background-image: url(https://images.unsplash.com/photo-1478358161113-b0e11994a36b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a11da19e81415e5a81029aade9df7774&auto=format&fit=crop&w=668&q=80)"></div>
+                <!-- <h2>Virtual Reality</h2>
+                <span>Dreaming with your eyes open!</span> -->
+
                 <h2 style="position: absolute;
                 top: 0;
                 left: -60px;
@@ -28,7 +31,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Include jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
@@ -36,7 +39,7 @@
         jQuery("#top").on("mousemove", function (t) {
             var e = -(jQuery(window).innerWidth() / 2 - t.pageX) / 30,
                 n = (jQuery(window).innerHeight() / 2 - t.pageY) / 10;
-            o.attr("style", "transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-webkit-transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-moz-transform: rotateY(" + e + "deg) rotateX(" + n + "deg)");
+            o.attr("style", "transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-webkit-transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-moz-transform: rotateY(" + e + "deg) rotateX(" + n + "deg); perspective: 1000px;");
         });
     </script>
 </body>
