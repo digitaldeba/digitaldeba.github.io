@@ -56,7 +56,7 @@ body {
     left: -60px;
     font-size: 40px;
     font-weight: 100;
-    transform: translateZ(80px);
+    transform: translateZ(80px)!important;
     }
     
     span {
@@ -65,7 +65,7 @@ body {
         right: -280px;
         font-size: 37px;
         font-weight: 600;
-        transform: translateZ(35px);
+        transform: translateZ(35px)!important;
     }
 }
 
