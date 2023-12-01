@@ -7,23 +7,7 @@ body {
     justify-content: center;
     height: 100vh;
 }
-h2 {
-    position: absolute;
-    top: 0;
-    left: -60px;
-    font-size: 40px;
-    font-weight: 100;
-    transform: translateZ(80px);
-}
 
-span {
-    position: absolute;
-    bottom: 40px;
-    right: -280px;
-    font-size: 37px;
-    font-weight: 600;
-    transform: translateZ(35px);
-}
 .perspective {
     width: 100%;
     perspective: 1000px;
@@ -65,24 +49,6 @@ span {
             filter: blur(55px);
         }
     }
-
-/*     h2 {
-        position: absolute;
-        top: 0;
-        left: -60px;
-        font-size: 40px;
-        font-weight: 100;
-        transform: translateZ(80px);
-    }
-
-    span {
-        position: absolute;
-        bottom: 40px;
-        right: -280px;
-        font-size: 37px;
-        font-weight: 600;
-        transform: translateZ(35px);
-    } */
 }
 
 
@@ -104,4 +70,22 @@ img {
     margin: auto;
     display: block;
     border-radius: 15px;
+}
+
+h2 {
+    position: absolute;
+    top: 0;
+    left: -60px;
+    font-size: 40px;
+    font-weight: 100;
+    transform: translateZ(80px);
+}
+
+span {
+    position: absolute;
+    bottom: 40px;
+    right: -280px;
+    font-size: 37px;
+    font-weight: 600;
+    transform: translateZ(35px);
 }
