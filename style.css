@@ -50,7 +50,7 @@ body {
         }
     }
 
-    h2 {
+/*     h2 {
         position: absolute;
         top: 0;
         left: -60px;
@@ -66,7 +66,25 @@ body {
         font-size: 37px;
         font-weight: 600;
         transform: translateZ(35px);
-    }
+    } */
+}
+
+h2 {
+    position: absolute;
+    top: 0;
+    left: -60px;
+    font-size: 40px;
+    font-weight: 100;
+    transform: translateZ(80px);
+}
+
+span {
+    position: absolute;
+    bottom: 40px;
+    right: -280px;
+    font-size: 37px;
+    font-weight: 600;
+    transform: translateZ(35px);
 }
 
 .dribbble {
